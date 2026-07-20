@@ -1,4 +1,3 @@
-# Maternal-Child-Nutrition-ME-Project
 # Public Health M&E Portfolio: Maternal & Child Nutrition Initiative
 
 ## 📌 Project Overview
