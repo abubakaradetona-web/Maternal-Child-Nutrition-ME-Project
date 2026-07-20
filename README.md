@@ -16,20 +16,20 @@ The structural logic of this intervention maps out how local capacity building a
 
 ### The Project Logic Chain:
 
-* **IMPACT (The Ultimate Goal):**
+* **IMPACT:**
   * Reduction in under-5 mortality & acute malnutrition rates.
 
-* **OUTCOMES (Behavioral & Systemic Changes):**
+* **OUTCOMES:**
   * Mothers adopt optimal infant feeding and cooking practices at home.
   * Increased utilization of ANC services & facility-based deliveries.
 
-* **OUTPUTS (Direct Products/Deliverables):**
+* **OUTPUTS:**
   * 50 CHVs successfully trained and equipped with MUAC screening kits.
   * Bi-weekly nutrition kitchens established across 10 villages.
 
-* **ACTIVITIES (Core Interventions):**
+* **ACTIVITIES:**
   * Run a 3-day training program for 50 local CHVs on MUAC tape.
   * Establish and operate bi-weekly Community Nutrition Kitchens.
 
-### ⚠️ Critical Sustainability Assumption:
-* **Husbands approve wives' participation.** (This acts as the essential behavioral bridge allowing project outputs to successfully translate into community outcomes).
+### Critical Sustainability Assumption:
+* **Husbands approve wives' participation.**
