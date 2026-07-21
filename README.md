@@ -1,15 +1,47 @@
 # Public Health M&E Portfolio: Maternal & Child Nutrition Initiative
 
 ## 📌 Project Overview
-This repository documents a comprehensive, end-to-end Monitoring and Evaluation (M&E) framework designed for a 12-month maternal and child health intervention across 10 rural villages. The project targets acute malnutrition in children under 5 and aims to improve antenatal care (ANC) and facility-based delivery compliance among pregnant women.
+This repository documents a comprehensive, end-to-end Monitoring, Evaluation, Accountability, and Learning (MEAL) framework designed for a 12-month maternal and child health intervention across 10 rural villages. The project addresses acute child malnutrition and works to improve antenatal care (ANC) and facility-based delivery compliance among pregnant women.
 
-### Core M&E Competencies Demonstrated:
-* **Day 1:** Logic Model & Results Framework Design 
-* **Day 2:** Strategic Indicator Design *(In Progress)*
+### 🗺️ Project Execution Roadmap
+* [x] **Step 1:** Needs Assessment, Root Cause Diagnosis & Validation Matrix
+* [x] **Step 2:** Results Framework & Theory of Change (Logic Model)
+* [x] **Step 3:** Strategic Indicator Framework & Math Formulas
+* [ ] **Step 4:** Data Collection Strategy & Stakeholder Needs Mapping *(Next)*
+* [ ] **Step 5:** KoboToolbox Survey Tool & Form Schema
+* [ ] **Step 6:** Dataset Simulation, SQL/Excel Cleaning & Power BI Dashboard
 
 ---
 
-## 📂 Day 1: Results Framework / Logic Model
+## 🔍 Step 1: Needs Assessment & Diagnostic Problem Analysis
+
+### 1. Baseline Context
+A baseline assessment across 10 target rural communities revealed critical public health challenges:
+* **High Malnutrition Rates:** Severe Acute Malnutrition (SAM) among children under 5 stands at **18%**, exceeding local emergency thresholds.
+* **Low Healthcare Utilization:** Only **35%** of pregnant women complete the recommended 4+ Antenatal Care (ANC) visits.
+* **Infant Feeding Gaps:** Only **22%** of infants are exclusively breastfed (0–6 months), and only **15%** of children (6–23 months) reach Minimum Dietary Diversity (MDD).
+
+---
+
+### 2. Root Cause Analysis (Issue Tree Breakdown)
+To avoid treating surface-level symptoms, a **Diagnostic Issue Tree** was applied using a **Demand vs. Supply** framework to isolate root drivers:
+
+```text
+                                                ┌─► Demand: Low nutritional literacy regarding local food groups
+                                ┌─► Sub-issue: ─┤
+                                │   Poor Diets  └─► Supply: Limited household access to diversified crops
+                                │
+Why is child malnutrition ──────┤
+high across target villages?    │               ┌─► Demand: Delayed recognition of early physical wasting signs
+                                └─► Sub-issue: ─┤
+                                    Late        └─► Supply: Lack of functional MUAC screening tools & trained CHVs
+                                    Detection
+
+
+
+```
+---
+### 📂 Step 3: Results Framework / Logic Model
 <img width="960" height="540" alt="logic model (1)" src="https://github.com/user-attachments/assets/15f41bc1-c0e0-48e2-bbe0-caa2e92ca189" />
 
 The structural logic of this intervention maps out how local capacity building and community-led nutrition hubs systematically drive behavioral shifts and long-term health impacts.
