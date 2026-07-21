@@ -5,10 +5,10 @@ This repository documents a comprehensive, end-to-end Monitoring, Evaluation, Ac
 
 ### 🗺️ Project Execution Roadmap
 * [x] **Step 1:** Needs Assessment, Root Cause Diagnosis & Validation Matrix
-* [x] **Step 2:** Results Framework & Theory of Change (Logic Model)
-* [x] **Step 3:** Strategic Indicator Framework & Math Formulas
-* [ ] **Step 4:** Data Collection Strategy & Stakeholder Needs Mapping *(Next)*
-* [ ] **Step 5:** KoboToolbox Survey Tool & Form Schema
+* [x] **Step 2:** Stakeholder Analysis & Information Needs Mapping
+* [x] **Step 3:** Results Framework & Theory of Change (Logic Model)
+* [x] **Step 4:** Strategic Indicator Framework & Math Formulas
+* [ ] **Step 5:** KoboToolbox Mobile Survey Tool & Form Schema *(Next Step)*
 * [ ] **Step 6:** Dataset Simulation, SQL/Excel Cleaning & Power BI Dashboard
 
 ---
