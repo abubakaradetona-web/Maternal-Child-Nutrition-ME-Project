@@ -64,7 +64,9 @@ To ensure M&E outputs directly serve operational, clinical, and strategic decisi
 ## Day 3
 ## Step 3: Results Framework / Logic Model
 <img width="960" height="540" alt="logic model (1)" src="https://github.com/user-attachments/assets/15f41bc1-c0e0-48e2-bbe0-caa2e92ca189" />
-
+<em>Made with google slide</em> 
+<br/>
+<br/>
 The structural logic of this intervention maps out how local capacity building and community-led nutrition hubs systematically drive behavioral shifts and long-term health impacts.
 
 ### The Project Logic Chain:
