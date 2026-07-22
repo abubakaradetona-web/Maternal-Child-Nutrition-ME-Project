@@ -24,7 +24,7 @@ A baseline assessment across 10 target rural communities revealed critical publi
 ---
 
 ### 2. Root Cause Analysis (Issue Tree Breakdown)
-To avoid treating surface-level symptoms, a **Diagnostic Issue Tree** was applied using a **Demand vs. Supply** framework to isolate root drivers:
+To avoid treating surface-level symptoms, a Diagnostic Issue Tree was applied using a Demand vs. Supply framework to isolate root drivers:
 
 ```text
                                                 ┌─► Demand: Low nutritional literacy regarding local food groups
