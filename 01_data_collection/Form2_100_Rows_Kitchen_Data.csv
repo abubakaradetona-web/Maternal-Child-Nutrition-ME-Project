@@ -1,0 +1,101 @@
+_submission_time,village,session_date,chv_id,mother_id,attended_yn,child_age_category,ebf_24h,mdd_food_groups
+2026-02-17 10:00,Jalala,2026-02-17,CHV-05,JAL-025,yes,6_23_months,NA,dairy other_fruits vita_fruits breastmilk legumes flesh_foods
+2026-04-22 10:00,Elemere,2026-04-22,CHV-05,JAL-007,yes,6_23_months,NA,legumes breastmilk flesh_foods other_fruits vita_fruits grains
+2026-03-06 10:00,Ganmo,2026-03-06,CHV-04,JAL-026,yes,6_23_months,NA,eggs grains vita_fruits flesh_foods
+2026-04-22 10:00,Fufu,2026-04-22,CHV-08,JAL-022,yes,0_5_months,no,NA
+2026-06-11 10:00,Omi,2026-06-11,CHV-03,JAL-043,no,none,NA,NA
+2026-05-03 10:00,Kwara,2026-05-03,CHV-09,JAL-026,yes,6_23_months,NA,eggs vita_fruits
+2026-02-22 10:00,Omi,2026-02-22,CHV-03,JAL-050,yes,6_23_months,NA,grains breastmilk eggs
+2026-01-31 10:00,Afon,2026-01-31,CHV-09,JAL-049,yes,6_23_months,NA,dairy grains eggs legumes
+2026-02-08 10:00,Kwara,2026-02-08,CHV-09,JAL-012,yes,none,NA,NA
+2026-05-03 10:00,Afon,2026-05-03,CHV-10,JAL-016,no,none,NA,NA
+2026-02-09 10:00,Ganmo,2026-02-09,CHV-06,JAL-007,yes,6_23_months,NA,breastmilk dairy
+2026-05-10 10:00,Fufu,2026-05-10,CHV-03,JAL-018,yes,6_23_months,NA,eggs vita_fruits breastmilk legumes
+2026-05-02 10:00,Fufu,2026-05-02,CHV-08,JAL-049,yes,6_23_months,NA,vita_fruits legumes eggs dairy other_fruits flesh_foods
+2026-03-10 10:00,Omi,2026-03-10,CHV-10,JAL-034,yes,6_23_months,NA,eggs flesh_foods other_fruits breastmilk dairy vita_fruits
+2026-03-17 10:00,Ganmo,2026-03-17,CHV-09,JAL-016,no,none,NA,NA
+2026-05-15 10:00,Afon,2026-05-15,CHV-09,JAL-039,yes,6_23_months,NA,breastmilk other_fruits
+2026-02-20 10:00,Elemere,2026-02-20,CHV-01,JAL-046,yes,0_5_months,yes,NA
+2026-06-03 10:00,Afon,2026-06-03,CHV-05,JAL-037,yes,6_23_months,NA,vita_fruits other_fruits dairy legumes
+2026-06-11 10:00,Agbamu,2026-06-11,CHV-05,JAL-045,yes,0_5_months,yes,NA
+2026-01-17 10:00,Idofian,2026-01-17,CHV-06,JAL-005,yes,none,NA,NA
+2026-01-23 10:00,Omi,2026-01-23,CHV-04,JAL-049,yes,6_23_months,NA,vita_fruits other_fruits flesh_foods
+2026-01-27 10:00,Idofian,2026-01-27,CHV-09,JAL-009,no,none,NA,NA
+2026-04-25 10:00,Kwara,2026-04-25,CHV-09,JAL-003,yes,6_23_months,NA,eggs flesh_foods legumes other_fruits
+2026-02-08 10:00,Ganmo,2026-02-08,CHV-02,JAL-024,yes,0_5_months,yes,NA
+2026-04-14 10:00,Kwara,2026-04-14,CHV-06,JAL-037,yes,6_23_months,NA,legumes vita_fruits eggs dairy other_fruits grains
+2026-05-09 10:00,Afon,2026-05-09,CHV-03,JAL-040,yes,6_23_months,NA,grains flesh_foods vita_fruits other_fruits dairy legumes
+2026-03-03 10:00,Elemere,2026-03-03,CHV-09,JAL-042,yes,6_23_months,NA,dairy eggs breastmilk grains other_fruits
+2026-02-14 10:00,Fufu,2026-02-14,CHV-10,JAL-010,no,none,NA,NA
+2026-02-22 10:00,Kwara,2026-02-22,CHV-04,JAL-002,no,none,NA,NA
+2026-01-26 10:00,Fufu,2026-01-26,CHV-02,JAL-032,yes,6_23_months,NA,eggs legumes
+2026-03-25 10:00,Omi,2026-03-25,CHV-07,JAL-010,yes,6_23_months,NA,other_fruits legumes grains breastmilk flesh_foods
+2026-06-11 10:00,Oke-Oyi,2026-06-11,CHV-02,JAL-004,yes,6_23_months,NA,vita_fruits flesh_foods
+2026-03-05 10:00,Oke-Oyi,2026-03-05,CHV-03,JAL-012,yes,0_5_months,no,NA
+2026-04-03 10:00,Omi,2026-04-03,CHV-10,JAL-023,yes,0_5_months,yes,NA
+2026-04-23 10:00,Elemere,2026-04-23,CHV-07,JAL-015,yes,6_23_months,NA,flesh_foods breastmilk legumes vita_fruits dairy
+2026-04-05 10:00,Idofian,2026-04-05,CHV-05,JAL-047,yes,6_23_months,NA,dairy vita_fruits grains other_fruits
+2026-01-29 10:00,Kwara,2026-01-29,CHV-03,JAL-049,yes,6_23_months,NA,grains vita_fruits eggs flesh_foods breastmilk
+2026-01-22 10:00,Kwara,2026-01-22,CHV-04,JAL-007,yes,0_5_months,no,NA
+2026-03-15 10:00,Afon,2026-03-15,CHV-03,JAL-020,yes,6_23_months,NA,flesh_foods legumes
+2026-03-18 10:00,Agbamu,2026-03-18,CHV-06,JAL-002,yes,6_23_months,NA,dairy other_fruits legumes vita_fruits eggs grains
+2026-02-15 10:00,Elemere,2026-02-15,CHV-01,JAL-038,no,none,NA,NA
+2026-01-25 10:00,Agbamu,2026-01-25,CHV-03,JAL-024,yes,0_5_months,yes,NA
+2026-04-04 10:00,Agbamu,2026-04-04,CHV-06,JAL-028,yes,6_23_months,NA,eggs legumes other_fruits
+2026-04-01 10:00,Oke-Oyi,2026-04-01,CHV-10,JAL-022,yes,none,NA,NA
+2026-04-14 10:00,Afon,2026-04-14,CHV-02,JAL-015,yes,0_5_months,no,NA
+2026-03-16 10:00,Omi,2026-03-16,CHV-06,JAL-009,no,none,NA,NA
+2026-04-27 10:00,Elemere,2026-04-27,CHV-02,JAL-012,no,none,NA,NA
+2026-04-16 10:00,Oke-Oyi,2026-04-16,CHV-07,JAL-011,no,none,NA,NA
+2026-05-26 10:00,Agbamu,2026-05-26,CHV-10,JAL-022,yes,6_23_months,NA,breastmilk flesh_foods
+2026-04-11 10:00,Elemere,2026-04-11,CHV-03,JAL-019,no,none,NA,NA
+2026-04-24 10:00,Idofian,2026-04-24,CHV-07,JAL-032,yes,6_23_months,NA,vita_fruits grains dairy
+2026-02-18 10:00,Agbamu,2026-02-18,CHV-01,JAL-007,yes,6_23_months,NA,breastmilk legumes grains
+2026-03-05 10:00,Jalala,2026-03-05,CHV-03,JAL-032,yes,0_5_months,yes,NA
+2026-03-21 10:00,Kwara,2026-03-21,CHV-04,JAL-006,yes,none,NA,NA
+2026-05-19 10:00,Omi,2026-05-19,CHV-02,JAL-040,no,none,NA,NA
+2026-04-23 10:00,Afon,2026-04-23,CHV-08,JAL-036,no,none,NA,NA
+2026-04-11 10:00,Afon,2026-04-11,CHV-02,JAL-037,no,none,NA,NA
+2026-02-24 10:00,Agbamu,2026-02-24,CHV-08,JAL-039,yes,6_23_months,NA,flesh_foods eggs
+2026-01-19 10:00,Jalala,2026-01-19,CHV-08,JAL-012,yes,none,NA,NA
+2026-03-02 10:00,Afon,2026-03-02,CHV-03,JAL-014,yes,6_23_months,NA,other_fruits grains legumes dairy flesh_foods
+2026-01-15 10:00,Elemere,2026-01-15,CHV-06,JAL-020,yes,6_23_months,NA,grains vita_fruits legumes other_fruits eggs breastmilk
+2026-05-28 10:00,Oke-Oyi,2026-05-28,CHV-02,JAL-014,yes,6_23_months,NA,dairy vita_fruits eggs other_fruits legumes
+2026-03-14 10:00,Ganmo,2026-03-14,CHV-01,JAL-049,yes,6_23_months,NA,other_fruits breastmilk dairy vita_fruits eggs
+2026-03-05 10:00,Elemere,2026-03-05,CHV-07,JAL-031,yes,6_23_months,NA,breastmilk legumes grains vita_fruits flesh_foods
+2026-05-18 10:00,Fufu,2026-05-18,CHV-08,JAL-050,yes,6_23_months,NA,vita_fruits dairy legumes breastmilk grains flesh_foods
+2026-05-08 10:00,Kwara,2026-05-08,CHV-01,JAL-026,no,none,NA,NA
+2026-05-07 10:00,Idofian,2026-05-07,CHV-09,JAL-046,no,none,NA,NA
+2026-01-15 10:00,Omi,2026-01-15,CHV-05,JAL-048,yes,0_5_months,yes,NA
+2026-03-18 10:00,Elemere,2026-03-18,CHV-01,JAL-041,no,none,NA,NA
+2026-01-27 10:00,Elemere,2026-01-27,CHV-05,JAL-013,yes,0_5_months,yes,NA
+2026-04-26 10:00,Oke-Oyi,2026-04-26,CHV-06,JAL-019,no,none,NA,NA
+2026-04-06 10:00,Elemere,2026-04-06,CHV-07,JAL-019,no,none,NA,NA
+2026-05-23 10:00,Idofian,2026-05-23,CHV-06,JAL-007,yes,6_23_months,NA,other_fruits eggs breastmilk dairy legumes
+2026-03-04 10:00,Jalala,2026-03-04,CHV-03,JAL-044,yes,6_23_months,NA,dairy flesh_foods other_fruits
+2026-03-03 10:00,Kwara,2026-03-03,CHV-06,JAL-028,yes,6_23_months,NA,vita_fruits breastmilk legumes eggs dairy
+2026-04-11 10:00,Agbamu,2026-04-11,CHV-02,JAL-044,no,none,NA,NA
+2026-02-04 10:00,Fufu,2026-02-04,CHV-07,JAL-016,yes,6_23_months,NA,eggs grains
+2026-02-02 10:00,Kwara,2026-02-02,CHV-04,JAL-048,yes,6_23_months,NA,breastmilk eggs flesh_foods other_fruits grains legumes
+2026-01-16 10:00,Jalala,2026-01-16,CHV-04,JAL-026,yes,0_5_months,yes,NA
+2026-03-29 10:00,Fufu,2026-03-29,CHV-07,JAL-049,yes,0_5_months,yes,NA
+2026-05-12 10:00,Fufu,2026-05-12,CHV-06,JAL-001,yes,6_23_months,NA,legumes dairy breastmilk grains
+2026-01-23 10:00,Afon,2026-01-23,CHV-08,JAL-042,no,none,NA,NA
+2026-03-04 10:00,Afon,2026-03-04,CHV-05,JAL-004,yes,6_23_months,NA,dairy eggs flesh_foods legumes other_fruits
+2026-03-24 10:00,Jalala,2026-03-24,CHV-03,JAL-044,no,none,NA,NA
+2026-05-13 10:00,Ganmo,2026-05-13,CHV-01,JAL-022,yes,6_23_months,NA,dairy other_fruits flesh_foods eggs breastmilk
+2026-01-16 10:00,Omi,2026-01-16,CHV-07,JAL-021,yes,6_23_months,NA,dairy eggs grains flesh_foods legumes other_fruits
+2026-03-23 10:00,Afon,2026-03-23,CHV-06,JAL-042,no,none,NA,NA
+2026-05-03 10:00,Oke-Oyi,2026-05-03,CHV-08,JAL-037,no,none,NA,NA
+2026-05-25 10:00,Elemere,2026-05-25,CHV-08,JAL-033,yes,6_23_months,NA,legumes other_fruits vita_fruits eggs grains
+2026-02-10 10:00,Ganmo,2026-02-10,CHV-08,JAL-038,yes,6_23_months,NA,breastmilk dairy other_fruits eggs vita_fruits
+2026-02-18 10:00,Kwara,2026-02-18,CHV-07,JAL-030,yes,6_23_months,NA,grains breastmilk other_fruits
+2026-03-10 10:00,Afon,2026-03-10,CHV-09,JAL-016,yes,6_23_months,NA,vita_fruits breastmilk grains other_fruits dairy
+2026-04-28 10:00,Idofian,2026-04-28,CHV-01,JAL-030,yes,6_23_months,NA,eggs legumes grains
+2026-06-05 10:00,Oke-Oyi,2026-06-05,CHV-01,JAL-023,yes,6_23_months,NA,other_fruits dairy vita_fruits flesh_foods eggs breastmilk
+2026-03-10 10:00,Agbamu,2026-03-10,CHV-03,JAL-022,yes,none,NA,NA
+2026-04-25 10:00,Oke-Oyi,2026-04-25,CHV-10,JAL-012,no,none,NA,NA
+2026-02-25 10:00,Agbamu,2026-02-25,CHV-02,JAL-045,yes,6_23_months,NA,grains eggs flesh_foods legumes
+2026-03-21 10:00,Kwara,2026-03-21,CHV-03,JAL-018,no,none,NA,NA
+2026-01-24 10:00,Elemere,2026-01-24,CHV-02,JAL-025,yes,6_23_months,NA,grains breastmilk
+2026-05-28 10:00,Elemere,2026-05-28,CHV-05,JAL-034,yes,0_5_months,no,NA
