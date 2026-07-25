@@ -113,11 +113,109 @@ To measure the success of the logic model, five specific public health indicator
   * *Type:* Proportion (Measures consumption across $\ge 5$ of 8 standard WHO food groups)
   * *Data Source:* Household Surveys (Toddler dietary intake sheets)
 
-### 3. Population Health Impact Metric
+## 3. Population Health Impact Metric
 * **Indicator 3.1:** `Prevalence of acute malnutrition (wasting) among children aged 6–59 months.`
   * *Type:* Prevalence / Impact Proportion
   * *Data Source:* Community Health Volunteer (CHV) Monthly Screening Ledgers
   * *Calculation Matrix:*
     $$\text{Wasting Prevalence (\%)} = \left( \frac{\text{Children surveyed with a Mid-Upper Arm Circumference (MUAC) } < 125\text{mm}}{\text{Total children screened via MUAC}} \right) \times 100$$
+---
+## Day 5:
+## Step 5: Digital Data Collection Architecture (KoboToolbox / ODK)
+
+To transition the baseline assessment away from prone paper logs and enable real-time monitoring across all 10 target villages, a dual-form mobile data collection system was engineered using **KoboToolbox (ODK Standard)**.
+
+Rather than overloading enumerators with a single massive survey, data collection is split into two specialized digital tools tailored to field operational realities:
+
+```text
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    DUAL MOBILE DATA COLLECTION PIPELINE                     │
+└──────────────────────────────────────┬──────────────────────────────────────┘
+                                       │
+            ┌──────────────────────────┴──────────────────────────┐
+            ▼                                                     ▼
+┌──────────────────────────────────────┐  ┌─────────────────────────────────────┐
+│               FORM 1                 │  │              FORM 2                 │
+│  Routine CHV Screening Log Sheet     │  │  Community Kitchen Attendance Log   │
+├──────────────────────────────────────┤  ├─────────────────────────────────────┤
+│ • Context: Individual 1-on-1 Visits  │  │ • Context: Bi-weekly Group Hubs     │ 
+│ • User: Community Health Volunteers  │  │ • User: Kitchen Facilitators / CHVs │
+│ • Speed: Ultra-fast (< 2 mins)       │  │ • Speed: Batch attendance tracking  │
+├──────────────────────────────────────┤  ├─────────────────────────────────────┤
+│  Ind 1.1: ANC 4+ Visit Count         │  │  Ind 2.1: Exclusive Breastfeeding   │
+│  Ind 1.2: Facility Delivery Rate     │  │  Ind 2.2: Min. Dietary Diversity    │
+│  Ind 3.1: Child MUAC Wasting         │  │  Payload Source for n8n Alerts      │
+└──────────────────────────────────────┘  └─────────────────────────────────────┘
+```
+### Form 1: CHV Integrated Screening & Service Log Sheet
+
+**Purpose:** Rapid, daily 1-on-1 household screening for pregnant mothers and under-5 children.
+
+#### Architectural & Security Highlights:
+* **Zero PII Policy (Ethics by Design):** Strictly omits personal names to maintain privacy compliance, relying on standardized parent identifiers (`mother_id`).
+* **Dynamic Relational Child IDs:** Auto-generates unique child codes (`JAL-014-C1`, `JAL-014-C2`) inside repeat groups using ODK XPath:
+  $$\text{child\_id} = \text{concat}(\text{\$\{mother\_id\}}, \text{'-C'}, \text{position}(..))$$
+* **Field Validation Constraints:** Strict regex pattern enforcement (`regex(., '^[A-Z]{3}-[0-9]{3}$')`) alongside biological range bounds (Mother Age: 12–50 yrs; Child Age: 6–59 mos; MUAC: 70–200 mm).
 
 ---
+
+#### Technical Schema Summary (Form 1)
+
+| Field Name | Type | Label / Question | Skip Logic (`relevant`) | Validation Rule (`constraint`) |
+| :--- | :--- | :--- | :--- | :--- |
+| `village` | `select_one` | Select target community | *None* | Mandatory |
+| `chv_id` | `select_one` | Select CHV Identifier | *None* | Mandatory |
+| `mother_id` | `text` | Mother Unique ID | *None* | `regex(., '^[A-Z]{3}-[0-9]{3}$')` |
+| `anc_enrolled` | `select_one` | Enrolled in ANC facility? | *None* | Mandatory |
+| `anc_count` | `integer` | Completed ANC visits count | `anc_enrolled = 'yes'` | `. >= 1 and . <= 10` |
+| `delivery_location` | `select_one` | Place of last child delivery | *None* | Mandatory |
+| `screen_child_yn` | `select_one` | Screen present children (6–59m)? | *None* | Mandatory |
+| `child_id` | `calculate` | Relational Child ID | Inside Child Repeat Group | `concat(${mother_id},'-C',position(..))` |
+| `child_age_months` | `integer` | Child age in completed months | Inside Child Repeat Group | `. >= 6 and . <= 59` |
+| `muac_mm` | `decimal` | Left arm MUAC in millimeters | Inside Child Repeat Group | `. >= 70 and . <= 200` |
+
+
+### Form 2: Community Kitchen Group Attendance & Dietary Log Sheet
+
+**Purpose:** Group session logging at bi-weekly nutrition kitchens to capture infant feeding behavior and power automated dropout alerts.
+
+####  Automated Workflow Integration (n8n):
+* **Real-time Webhook Payload:** Every form submission dispatches a JSON payload containing `mother_id`, `village`, and `attended_yn` to an **n8n automation engine**.
+* **Dropout Threshold Alert:** When a mother accumulates **2 consecutive absences**, n8n triggers an automated WhatsApp/Email notification to the assigned CHV for an immediate home follow-up.
+
+---
+
+####  Technical Schema Summary (Form 2)
+
+| Field Name | Type | Label / Question | Skip Logic (`relevant`) | Validation Rule (`constraint`) |
+| :--- | :--- | :--- | :--- | :--- |
+| `village` | `select_one` | Village Name | *None* | Mandatory |
+| `session_date` | `date` | Kitchen Session Date | *None* | `. <= today()` |
+| `chv_id` | `select_one` | Facilitator / CHV ID | *None* | Mandatory |
+| `mother_id` | `text` | Mother ID | *None* | `regex(., '^[A-Z]{3}-[0-9]{3}$')` |
+| `attended_yn` | `select_one` | Attended today's session? | *None* | Mandatory |
+| `child_age_category` | `select_one` | Age bracket of attending child | `${attended_yn} = 'yes'` | Mandatory |
+| `ebf_24h` | `select_one` | Given non-breastmilk foods/fluids in last 24h? | `${child_age_category} = '0_5_months'` | Mandatory |
+| `mdd_food_groups` | `select_multiple` | WHO 8 Food Groups consumed in last 24h | `${child_age_category} = '6_23_months'` | Select $\ge 1$ choices |
+
+---
+
+###  100% Indicator Coverage Matrix
+
+Across both digital forms, every single strategic metric defined in Step 4 is systematically captured at point-of-entry:
+
+| Strategic Indicator | Target Population | Source Tool | Field Variables Used |
+| :--- | :--- | :--- | :--- |
+| **Ind 1.1: ANC 4+ Visit Completion** | Pregnant Women | **Form 1** | `anc_enrolled`, `anc_count` |
+| **Ind 1.2: Facility Delivery Rate** | Mothers | **Form 1** | `delivery_location` |
+| **Ind 2.1: Exclusive Breastfeeding (EBF)** | Infants (0–5m) | **Form 2** | `ebf_24h` |
+| **Ind 2.2: Minimum Dietary Diversity (MDD)** | Toddlers (6–23m) | **Form 2** | `mdd_food_groups` (WHO 8 Groups) |
+| **Ind 3.1: Child Wasting Prevalence** | Children (6–59m) | **Form 1** | `child_age_months`, `muac_mm` |
+
+---
+
+### 📂 Repository File Links
+
+* 📄 **Form 1 XLSForm Definition:** [`01_data_collection/Form1_CHV_Screening_Log.xlsx`](01_data_collection/Form1_CHV_Screening_Log.xlsx)
+* 📄 **Form 2 XLSForm Definition:** [`01_data_collection/Form2_Kitchen_Attendance_Log.xlsx`](01_data_collection/Form2_Kitchen_Attendance_Log.xlsx)
+* 📊 **Synthetic Test Dataset:** [`01_data_collection/synthetic_chv_screening_data.csv`](01_data_collection/synthetic_chv_screening_data.csv)
